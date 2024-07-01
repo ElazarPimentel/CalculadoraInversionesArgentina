@@ -1,0 +1,13 @@
+{
+    "name": "calculadora-de-inversiones",
+    "version": "1.0.0",
+    "description": "Calculadora de Inversiones en Vercel",
+    "main": "index.js",
+    "scripts": {
+        "build": "sass styles/style.scss public/css/style.css",
+        "start": "serve public"
+    },
+    "dependencies": {
+        "sass": "^1.32.8"
+    }
+}

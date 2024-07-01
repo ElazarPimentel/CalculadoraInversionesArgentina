@@ -1,0 +1,22 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "styles/style.scss",
+            "use": "@vercel/static-build",
+            "config": {
+                "distDir": "public/css"
+            }
+        },
+        {
+            "src": "public/**/*",
+            "use": "@vercel/static"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "/public/$1"
+        }
+    ]
+}

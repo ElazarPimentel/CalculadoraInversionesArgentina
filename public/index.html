@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Inversiones</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="/images/icons/favicon.ico">
+    <script defer src="js/main.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calculadora de Inversiones</h1>
+        <div class="input-group">
+            <div class="form-group">
+                <label for="inversion">Inversión Inicial</label>
+                <input type="text" id="inversion" maxlength="10" min="0" required>
+            </div>
+            <div class="form-group">
+                <label for="años">Años</label>
+                <input type="number" id="años" maxlength="3" min="0" required>
+            </div>
+            <div class="form-group">
+                <label for="meses">Meses</label>
+                <input type="number" id="meses" maxlength="2" min="0" max="11" required>
+            </div>
+        </div>
+        <div class="resultados">
+            <div class="columna">
+                <h2>TNA</h2>
+                <div class="form-group">
+                    <label for="tasa-tna">Tasa de Interés TNA (%)</label>
+                    <input type="number" id="tasa-tna" min="0" step="0.01" required>
+                </div>
+                <p id="resultado-tna"></p>
+            </div>
+            <div class="columna">
+                <h2>TEA</h2>
+                <div class="form-group">
+                    <label for="tasa-tea">Tasa de Interés TEA (%)</label>
+                    <input type="number" id="tasa-tea" min="0" step="0.01" required>
+                </div>
+                <p id="resultado-tea"></p>
+            </div>
+            <div class="columna">
+                <h2>APY</h2>
+                <div class="form-group">
+                    <label for="tasa-apy">Tasa de Interés APY (%)</label>
+                    <input type="number" id="tasa-apy" min="0" step="0.01" required>
+                </div>
+                <p id="resultado-apy"></p>
+            </div>
+        </div>
+        <button id="calcular">Calcular</button>
+        <div id="errores" class="errores" aria-live="assertive">
+            <p class="error">Por favor, ingrese valores válidos.</p>
+        </div>
+    </div>
+    <footer>Derechos de Autor © 2024 - Alessio Renan Aguirre Pimentel. Todos los derechos reservados. Obra protegida por el
+        Convenio Internacional de Berna, legislación Argentina e Internacional sobre derechos de autor.</footer>
+
+</body>
+
+
+</html>
